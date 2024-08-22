@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-pane {
+  width: 20%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.draggable-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: grab;
+  height: 07vh;
+  width: 07vw;
+  border: 1px solid #333;
+}
+
+/* Styling for button */
+.button-style {
+  background-color: darkviolet;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+/* Styling for label */
+.label-style {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.drop-zone {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  border: 2px dashed #aaa;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropped-item {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 4px;
+  position: absolute;
+  cursor: grab;
+}
+
+.right-pane {
+  width: 40%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  height: 100vh; /* Ensure it takes the full height of the viewport */
+  overflow-y: auto;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.save-button-container {
+  text-align: center; /* Centers the Save button horizontally */
+  margin-top: auto; /* Pushes the Save button to the bottom */
+}
+
+.save-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: darkgreen;
+}
